@@ -1,0 +1,40 @@
+name: 💡 Feature Request
+description: Suggest an idea for Kompliance.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Tell us what you need and why. The more
+        context we have, the better we can evaluate the request.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your request related to a problem?
+      description: Describe the problem or limitation you're facing.
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you'd like to see implemented.
+      placeholder: A clear description of the feature or change.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or alternative approaches you've tried.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: |
+        Any other details — use cases, screenshots, links to similar
+        features in other plugins — that might help us understand the request.

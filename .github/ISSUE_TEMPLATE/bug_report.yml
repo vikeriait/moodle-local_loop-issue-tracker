@@ -1,0 +1,74 @@
+name: 🐛 Bug Report
+description: Something isn't working as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the
+        sections below so we can reproduce and fix it quickly.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: What happened? What did you expect to happen instead?
+      placeholder: A clear and concise description of the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that trigger the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: input
+    id: moodle_version
+    attributes:
+      label: Moodle version
+      description: Which Moodle version are you running?
+      placeholder: e.g. 4.5.2 (Build: 20250307)
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Kompliance version
+      description: Which version of the plugin are you running?
+      placeholder: e.g. 2026041600
+
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database engine
+      options:
+        - MySQL / MariaDB
+        - PostgreSQL
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: |
+        If applicable, paste any error messages from Moodle logs (enable
+        debugging in *Site Administration > Development > Debugging*).
+        You can also attach screenshots by dragging them here.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other details that might help (other plugins installed, custom theme, server setup, etc.)
