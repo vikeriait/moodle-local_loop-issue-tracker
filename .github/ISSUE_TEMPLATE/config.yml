@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: 📖 Documentation
-    url: https://moodledev.io
+    url: https://plugins.dl-p.ch/loop-docs/
     about: Read the user guide and admin docs before opening an issue.
